@@ -322,7 +322,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		int length=0;
 		Date[] date1=new Date[length];
-		for(int i=0;i<=length;i++)
+		for(int i=0;i<=length;)
 		{
 			if(student.getBirthDate().before(date))
 			{
@@ -333,6 +333,7 @@ public class StudentGroup implements StudentArrayOperation {
 			{
 				length++;
 			}
+			i++;
 			return students;
 		}
 		return null;
